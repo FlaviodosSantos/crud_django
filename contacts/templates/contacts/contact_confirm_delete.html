@@ -1,0 +1,7 @@
+<h1>Contact Delete?</h1>
+<form  method="post">
+{% csrf_token %}
+Are you sure you want to delete this contact?
+<input  type="submit"  value="Submit"  />
+<a href="{% url "contact_list" %}">Back</a>
+</form>
